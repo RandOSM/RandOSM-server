@@ -1,5 +1,23 @@
 @import "bootstrap_theme";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
-@import "header";
-@import "menu_right";
-@import "body";
+
+//header
+.navbar-brand-img {
+  height: 100%;
+}
+
+//menu left
+.menu-left {
+  margin-bottom: 20px;
+}
+
+.menu-left img {
+  max-width: 100%;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+//body
+.body {
+}
