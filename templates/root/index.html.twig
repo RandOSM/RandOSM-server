@@ -3,46 +3,37 @@
 {% block title %} Home {{ parent() }}{% endblock %}
 
 {% block body %}
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
-    <div>Hello World!</div>
+    <div id="root-index-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#root-index-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#root-index-carousel" data-slide-to="1"></li>
+            <li data-target="#root-index-carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner center-block">
+            <div class="item active">
+                <img src="{{ asset('assets/carousel/screen1.jpg') }}" alt="Description d'une randonée">
+            </div>
+            <div class="item">
+                <img src="{{ asset('assets/carousel/screen2.jpg') }}" alt="Liste des randonnées">
+            </div>
+            <div class="item">
+                <img src="{{ asset('assets/carousel/screen3.jpg') }}" alt="Recherche">
+            </div>
+            <div class="item">
+                <img src="{{ asset('assets/carousel/screen4.jpg') }}" alt="Menu">
+            </div>
+            <div class="item">
+                <img src="{{ asset('assets/carousel/screen5.jpg') }}" alt="Recherche par ville">
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#root-index-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#root-index-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
 {% endblock %}
