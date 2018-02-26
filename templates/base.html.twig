@@ -15,7 +15,7 @@
 
         <div class="navbar-header">
             <a class="navbar-brand" href="/">
-                <img class="navbar-brand-img" alt="brand" src="{{ asset('assets/brand.svg') }}"/>
+                <img class="navbar-brand-img" alt="brand" src="{{ asset('assets/img/brand.svg') }}"/>
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="navbar-right" aria-expanded="false">
@@ -29,17 +29,22 @@
             <ul class="nav navbar-nav navbar-right">
                 {# TODO: change link to generated route #}
                 <li>
-                    <button class="btn btn-default" href="/signin}">Sign In</button>
+                    <button class="btn btn-default" href="/user/signin}">Sign In</button>
                 </li>
                 <li>
-                    <button class="btn btn-default" href="/login">Login</button>
+                    <button class="btn btn-default" href="/user/login">Login</button>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 <div class="container">
-    {% block body %}{% endblock %}
+    <div class="menu-left">
+        {{ render(controller('App\\Controller\\MenuController::Menu')) }}
+    </div>
+    <div class="body">
+        {% block body %}{% endblock %}
+    </div>
 </div>
 {% block javascripts %}
     <script src="{{ asset('build/js/app.js') }}"></script>
