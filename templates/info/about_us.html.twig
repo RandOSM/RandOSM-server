@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block title %}A propos de nous {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div>
+        <h1>A propos de nous</h1>
+        <p>Rand'OSM est un projet débuté en 2013 par des étudiants de l'université de Vannes.</p>
+        <p>S'appuyant sur l'outil de cartographie libre <a href="{{ path('info_osm') }}">OpenStreetMap</a>,
+            Rand'OSM se veut un moyen efficace et simple de créer et partager des randonnées.</p>
+        <p>Que vous soyez une administration municipale , une association ou un simple utilisateur,
+            Rand'OSM vous offre toutes ses fonctionnalités de manière entièrement gratuite.</p>
+    </div>
+{% endblock %}

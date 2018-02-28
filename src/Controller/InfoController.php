@@ -20,4 +20,9 @@ class InfoController
         return new Response($this->twig->render('info/osm.html.twig'));
     }
 
+    public function aboutUs()
+    {
+        return new Response($this->twig->render('info/about_us.html.twig'));
+    }
+
 }

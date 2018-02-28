@@ -1,3 +1,7 @@
 info_osm:
   path: /info/osm
   controller: App\Controller\InfoController::osm
+
+info_about_us:
+  path: /info/aboutus
+  controller: App\Controller\InfoController::aboutUs
