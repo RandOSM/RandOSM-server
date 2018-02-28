@@ -1,0 +1,3 @@
+info_osm:
+  path: /info/osm
+  controller: App\Controller\InfoController::osm
